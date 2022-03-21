@@ -122,7 +122,7 @@ body {
 }
 
 .btn-full:hover:not(.disabled) {
-  background-color: rgba(243, 225, 225, 0.863);
+  background-color: white;
   color: var(--orange);
 }
 
