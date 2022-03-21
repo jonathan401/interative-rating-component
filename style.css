@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root {
+  /* primary */
+  --orange: hsl(25, 97%, 53%);
+  --btn-light: rgb(39, 55, 71);
+
+  /* neutral */
+
+  --main-bg: hsl(216, 12%, 8%);
+  --card-bg: rgb(33, 40, 50);
+  --light-grey: rgb(124, 136, 152);
+  --medium-grey: hsl(216, 12%, 54%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  line-height: 1.6;
+}
+
+/* general classes */
+
+.card {
+  font-family: 'Overpass', sans-serif;
+  max-width: 320px;
+  background-color: var(--card-bg);
+  border-radius: 1.5rem;
+}
+
+/* class to hide the cards */
+.hidden {
+  display: none;
+}
+
+.rating-card {
+  padding: 2rem 1.5rem;
+}
+
+.thank-you-card {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.rating {
+  background-color: rgb(42, 46, 55);
+  color: var(--orange);
+  display: inline-block;
+  border-radius: 3rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  padding: 0.3rem 1rem;
+}
+
+/* buttons in normal states */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: 0;
+  border: 0;
+}
+
+.rate-btns {
+  margin: 1.5rem 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.btn,
+.btn-full {
+  transition: all 0.3s;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--btn-light);
+  color: var(--light-grey);
+}
+
+.btn.active {
+  background-color: var(--light-grey);
+  color: white;
+}
+
+.btn-full {
+  padding: 1rem 0;
+  border: 0;
+  outline: none;
+  letter-spacing: 0.1rem;
+  background-color: var(--orange);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4rem;
+  width: 100%;
+}
+
+.btn-full.disabled {
+  opacity: 0.3;
+}
+
+/* buttons in hover states */
+.btn:hover:not(.active) {
+  background-color: var(--orange);
+  color: white;
+}
+
+.btn-full:hover:not(.disabled) {
+  background-color: rgba(243, 225, 225, 0.863);
+  color: var(--orange);
+}
+
+/* card content */
+.badge,
+.illustration {
+  margin-bottom: 1.2rem;
+}
+
+.badge {
+  background-color: var(--btn-light);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.header h2 {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  color: rgb(251, 255, 255);
+}
+
+.card-text p {
+  font-size: 0.76rem;
+  font-weight: 400;
+  color: var(--medium-grey);
+}
+
+@media screen and (min-width: 425px) {
+  body {
+    padding: 0;
+  }
+}

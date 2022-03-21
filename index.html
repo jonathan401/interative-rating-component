@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Rating Component</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="rating-card card">
+        <div class="badge btn">
+          <img src="./images/icon-star.svg" role="presentation" />
+        </div>
+        <div class="header">
+          <h2>How did we do?</h2>
+        </div>
+        <div class="card-text">
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="rate-btns">
+          <div class="rate-btn">
+            <button class="btn btn-primary">1</button>
+          </div>
+          <div class="rate-btn">
+            <button class="btn btn-primary">2</button>
+          </div>
+          <div class="rate-btn">
+            <button class="btn btn-primary">3</button>
+          </div>
+          <div class="rate-btn">
+            <button class="btn btn-primary">4</button>
+          </div>
+          <div class="rate-btn">
+            <button class="btn btn-primary">5</button>
+          </div>
+        </div>
+        <div>
+          <button class="btn-full disabled">Submit</button>
+        </div>
+      </div>
+      <div class="thank-you-card card hidden"></div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
