@@ -136,11 +136,19 @@ body {
   height: 40px;
 }
 
+.header h1,
 .header h2 {
-  font-size: 1.4rem;
   letter-spacing: 2px;
   margin-bottom: 0.5rem;
   color: rgb(251, 255, 255);
+}
+
+.header h1 {
+  font-size: 1.4rem;
+}
+
+.header h2 {
+  font-size: 1.3rem;
 }
 
 .card-text p {
