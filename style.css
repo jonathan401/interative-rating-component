@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.6rem;
+  padding: 1rem;
   line-height: 1.6;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .card {
   font-family: 'Overpass', sans-serif;
-  max-width: 320px;
+  max-width: 340px;
   background-color: var(--card-bg);
   border-radius: 1.5rem;
 }
@@ -69,6 +69,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 40px;
+  font-size: 0.9rem;
   height: 40px;
   border-radius: 50%;
   outline: 0;
@@ -100,7 +101,7 @@ body {
 }
 
 .btn-full {
-  padding: 1rem 0;
+  padding: 0.7rem 0;
   border: 0;
   outline: none;
   letter-spacing: 0.1rem;
@@ -111,17 +112,13 @@ body {
   width: 100%;
 }
 
-.btn-full.disabled {
-  opacity: 0.3;
-}
-
 /* buttons in hover states */
 .btn:hover:not(.active) {
   background-color: var(--orange);
   color: white;
 }
 
-.btn-full:hover:not(.disabled) {
+.btn-full:hover {
   background-color: white;
   color: var(--orange);
 }
@@ -152,8 +149,24 @@ body {
   color: var(--medium-grey);
 }
 
-@media screen and (min-width: 425px) {
+.submit-btn p {
+  text-align: center;
+  margin-top: 0.7rem;
+  font-size: 0.76rem;
+  color: var(--orange);
+}
+
+@media screen and (min-width: 375px) {
   body {
     padding: 0;
+  }
+
+  .card {
+    max-width: 360px;
+  }
+
+  .btn {
+    width: 50px;
+    height: 50px;
   }
 }

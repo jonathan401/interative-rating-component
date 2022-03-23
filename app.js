@@ -1,6 +1,7 @@
 const buttons = document.querySelectorAll('button.btn');
 const submitBtn = document.querySelector('.btn-full');
 const thankYouCard = document.querySelector('.thank-you-card');
+const error = document.querySelector('.error');
 const ratingCard = document.querySelector('.rating-card');
 
 // button
@@ -11,7 +12,6 @@ buttons.forEach(button => {
       button.classList.remove('active');
     });
     button.classList.add('active');
-    submitBtn.classList.remove('disabled');
   });
 });
 
@@ -44,6 +44,8 @@ submitBtn.addEventListener('click', () => {
     if (button.classList.contains('active')) {
       let rated = button.textContent.trim();
       updateThanksCard(rated);
+    } else {
+      error.classList.remove('hidden');
     }
   });
 });
