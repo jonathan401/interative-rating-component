@@ -7,7 +7,6 @@ const ratingCard = document.querySelector('.rating-card');
 // button
 buttons.forEach(button => {
   button.addEventListener('click', () => {
-    // button.classList.add('active');
     buttons.forEach(button => {
       button.classList.remove('active');
     });
